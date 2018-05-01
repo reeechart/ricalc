@@ -152,6 +152,7 @@ class RicalcState extends State<Ricalc> {
       case '\u{221A}':
         double currentValue = double.parse(input);
         currentValue = sqrt(currentValue);
+        value = currentValue;
         setState(() => input = currentValue.toStringAsPrecision(4));
         break;
       default:
